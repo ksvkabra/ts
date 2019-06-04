@@ -19,29 +19,29 @@ console.log('it works');
     union types
 */
 //number
-var a = 19;
+var age = 19;
 //a = "keshav" - error - a cannot be changed to string from number type
 //string
-var b = "keshav";
-console.log(typeof b);
-var c;
-//c = 10; c variable can only use type c
-var d = 27;
+var myName = "keshav";
+console.log(typeof myName);
+var someVar;
+//someVar= 10; c variable can only use type c
+var myAge = 27;
 //d  = '27'; //error
 //array
-var hoobies = ["sports", "cooking"];
-console.log(typeof hoobies);
-console.log(typeof hoobies[0]);
+var hobbies = ["sports", "cooking"];
+console.log(typeof hobbies);
+console.log(typeof hobbies[0]);
 var cars = ['maruti', 'honda', 'bmw', 'rollroyce'];
 console.log(cars);
 cars = ['mercedes'];
 console.log(cars);
-var e = 100;
-e = 'keshav';
+var numberToString = 100;
+numberToString = 'keshav';
 //tuples
-var num = ['keshav', 99];
-console.log(num);
-console.log(typeof num);
+var empDetail = ['keshav', 99];
+console.log(empDetail);
+console.log(typeof empDetail);
 //enum
 var SetColor;
 (function (SetColor) {
@@ -63,27 +63,27 @@ var myNumber;
 myNumber = add;
 console.log(myNumber(1, 2));
 //objects
-var f = {
+var emp1 = {
     name: 'keshav',
     age: 20,
 };
-console.log(f);
-f = {
+console.log(emp1);
+emp1 = {
     name: 'amrit',
     age: 20
 };
-console.log(f);
-var g = {
+console.log(emp1);
+var emp2 = {
     name: "keshav",
     age: 14
 };
-console.log(g);
-var h = {
+console.log(emp2);
+var cmp1 = {
     data: [1, 2, 3],
-    output: function (all) { return h.data; }
+    output: function (all) { return cmp1.data; }
 };
-console.log(h, 'hi');
-console.log(h.output(true));
+console.log(cmp1, 'hi');
+console.log(cmp1.output(true));
 var bankAccount = {
     money: 2000,
     deposit: function (value) {

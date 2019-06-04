@@ -21,36 +21,36 @@ console.log('it works')
 
 //number
 
-let a = 19;
+let age = 19;
 //a = "keshav" - error - a cannot be changed to string from number type
 
 //string
-let b = "keshav";
-console.log(typeof b);
-let c: string;
-//c = 10; c variable can only use type c
+let myName = "keshav";
+console.log(typeof myName);
+let someVar: string;
+//someVar= 10; c variable can only use type c
 
-let d = 27;
+let myAge = 27;
 //d  = '27'; //error
 
 //array
-let hoobies: string[] = ["sports", "cooking"];
-console.log(typeof hoobies);
-console.log(typeof hoobies[0]);
+let hobbies: string[] = ["sports", "cooking"];
+console.log(typeof hobbies);
+console.log(typeof hobbies[0]);
 
 let cars = ['maruti', 'honda', 'bmw', 'rollroyce'];
 console.log(cars);
 cars  = ['mercedes']
 console.log(cars);
 
-let e: any = 100;
-e = 'keshav';
+let numberToString: any = 100;
+numberToString = 'keshav';
 
 
 //tuples
-let num: [string, number] = ['keshav', 99];
-console.log(num);
-console.log(typeof num);
+let empDetail: [string, number] = ['keshav', 99];
+console.log(empDetail);
+console.log(typeof empDetail);
 
 //enum
 enum SetColor {
@@ -83,38 +83,38 @@ console.log(myNumber(1, 2));
 
 //objects
 
-let f = {
+let emp1 = {
     name: 'keshav',
     age: 20,
 }
 
-console.log(f);
+console.log(emp1);
 
-f = {
+emp1 = {
     name: 'amrit',
     age: 20
 }
 
-console.log(f);
+console.log(emp1);
 
 
-let g: {name: string, age: number} = {
+let emp2: {name: string, age: number} = {
     name: "keshav",
     age: 14
 }
 
-console.log(g);
+console.log(emp2);
 
 
 type Complex = {data: number[], output: (all: boolean) => number[]}
 
-let h: Complex = {
+let cmp1: Complex = {
     data: [1, 2, 3],
-    output: (all:boolean): number[] => h.data
+    output: (all:boolean): number[] => cmp1.data
 }
 
-console.log(h, 'hi');
-console.log(h.output(true));
+console.log(cmp1, 'hi');
+console.log(cmp1.output(true));
 
 type bankAccount = {money: number, deposit:(value: number) => void};
 
@@ -134,3 +134,5 @@ let myself: {name: string, bankAccount: bankAccount, hobbies: string[]}=  {
 myself.bankAccount.deposit(3000);
 
 console.log(myself);
+
+
